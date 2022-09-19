@@ -1,2 +1,3 @@
-# React-tutorials
- First attempts at understanding how to use React
+# My first React app
+
+More details to come...

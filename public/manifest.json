@@ -1,0 +1,8 @@
+{
+  "short_name": "First React App",
+  "name": "First React App - learning the basics",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
