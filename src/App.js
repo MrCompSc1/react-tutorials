@@ -1,37 +1,45 @@
 import './App.css';
 import React from 'react';
 
+const Heading = (
+  <div>
+    <h1>This is a block of JSX</h1>
+    <p>Here's the subtitle</p>
+  </div>
+);
+
 class HelloMessage extends React.Component {
   constructor(props) {
     super(props);
   }
   
   render() {
-      return ( 
-          <div>
-              <Heading />
-              <p>Hello {this.props.name}</p> 
-          </div>    
-      );
+    return ( 
+        <div>
+            <p>Hello {this.props.name}</p> 
+        </div>    
+    );
   }
 };
 
-const Heading = () => {
-  return (
-    <div>
-      <h1>This is a block of JSX</h1>
-      <p>Here's the subtitle</p>
-    </div>
-  );
+class HelloPage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    return ( 
+        <div>
+            {Heading}
+            <HelloMessage name="Stuart" />
+        </div>    
+    );
+  }
 };
-
-const Hello = (
-  <HelloMessage name="Stuart" />
-)
 
 function App() {
   return (
-    Hello
+    <HelloPage />
   );
 }
 
